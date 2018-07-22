@@ -1,0 +1,53 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  background: #DCDCDC;
+}
+
+.focus {
+  color: #444;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        top: 1000px
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        top: 1000px
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+.animatedText {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    position: relative;
+}
